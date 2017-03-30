@@ -1,0 +1,77 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8">
+<script>
+	function displayFormContents(){
+		alert('ok');
+	}
+</script>
+<title>Form</title>
+<style>
+	body{
+		background-color: #ffffff;
+	}
+	.main{
+		margin : 20px;
+	}
+	table{
+		width: 80%;
+		border-collapse: collapse;
+			}
+	td, table th{
+
+		text-align: left;
+		position: relative;
+	}
+	td.t {
+		border-top: 1px solid #cccccc;
+	}
+	td.b {
+		border-bottom: 1px solid #cccccc;
+	}
+	td.r {
+		border-right: 1px solid #cccccc;
+	}
+	td.l {
+		border-left: 1px solid #cccccc;
+	}
+
+	h1{
+		text-align: left;
+		font-size: 2.5vw;
+		color: black;
+	}
+	h2{
+		text-align: left;
+		font-size: 2vw;
+		color: black;
+	}
+	p, p.text, ul, ol{
+		font-size: 2vw;
+	}
+</style>
+</head>
+
+<body><div id="header" >
+<div  class="header_titre">
+<h1>Formulaire</h1>
+</div>
+<div id="main"><h2>Inscription</h2>
+<div id="form">
+
+<FORM class="Form">
+<table>
+<tr><td class="form"><LABEL for="Notused">Firstname : </LABEL><INPUT type="text" name="Firstname" id="Firstname" value="" required></td></tr>
+<tr><td class="form"><LABEL for="Notused">Name : </LABEL><INPUT type="text" name="Name" id="Name" value="" required></td></tr>
+<tr><td class="form"><LABEL for="Notused">Age : </LABEL><INPUT type="text" name="Age" id="Age" value="" required></td></tr>
+<tr><td class="form"><LABEL for="Notused">Phone : <INPUT type="text" name="Phone" id="Phone" required></td></tr>
+<tr><td class="form"><LABEL for="Notused">Email : <INPUT type="mail" name="Email" id="Email" required></td></tr>
+<tr><td class="form"><LABEL for="Notused">Student at 42 ? : </LABEL><INPUT type="checkbox" name="Student" id="Student"></td></tr>
+<tr><td class="form"><LABEL for="Notused"></LABEL><INPUT type="radio" name="gender" value="male">Male <INPUT type="radio" name="gender" value="female">Female <INPUT type="radio" name="gender" value="other">Other </td></tr>
+<tr><td class="form"><INPUT type="submit"  name="Envoyer" id="Envoyer" value="Run that sexy Javascript !" onclick="displayFormContents('hh');"></td><td class="form"> </td></tr>
+</table>
+</form>
+</div>
+</div>
+</body>
+</html>

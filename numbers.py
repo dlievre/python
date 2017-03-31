@@ -1,5 +1,4 @@
 # -*- coding: latin-1 -*-
-
 def openFile(file):
 	fichier = open("numbers.txt", "r")
 	contenu = fichier.read()

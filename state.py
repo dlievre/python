@@ -12,13 +12,12 @@ def traitement(param):
 		"NJ": "Trenton",
 		"CO": "Denver"
 		}
-	#print (states)
-	#print(states.has_key(param))
 	if param in capital_cities.values():
-		print('ok')
 		for key in capital_cities:
 			if capital_cities[key] == param:
-				print(states[param])
+				for key2 in states:
+					if states[key2] == key:
+						print(key2)
 	else:
 		print('Unknown capital city')
 		

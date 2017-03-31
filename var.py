@@ -5,7 +5,7 @@ def my_var():
 	print (n, msg , type(n))
 	n = "42"
 	print (n, msg , type(n))
-	n = "quqrante-deux"
+	n = "quarante-deux"
 	print (n, msg , type(n))
 	n = 42.0
 	print (n, msg , type(n))

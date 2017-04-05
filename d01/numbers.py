@@ -3,8 +3,9 @@ def openFile(file):
 	fichier = open("numbers.txt", "r")
 	contenu = fichier.read()
 	try:
-		new = contenu.replace(",","\n")
-		print (new)
+		contenu = contenu.replace("\n","")
+		contenu = contenu.replace(",","\n")
+		print (contenu)
 
 	finally:
 		fichier.close()

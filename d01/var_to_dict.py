@@ -22,9 +22,14 @@ def traitement():
 	('Thompson'  	, '1949'),
 	('Burton'    	, '1939')
 	]
-	#print (d)
-	for (key1, key2) in d:
-		print (key2, ' : ', key1)
-		
+	dict = {}# on crée un nouveau tableau avec comme keys les années
+	for (val, key) in d:
+		if key not in dict:
+			dict.update({key:val})
+		else:
+			dict[key] = dict[key]+' '+val# ajout value + space
+	for key, value in dict.items():
+		print (key,':',value)
+
 if __name__ == '__main__':
 	traitement()
